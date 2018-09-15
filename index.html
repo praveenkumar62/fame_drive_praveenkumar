@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+
+header
+{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("pic1.jpg");
+	height:350px;
+	background-position:center;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+footer
+{
+	background-color: grey;
+	text-align: center;
+}
+
+.head1
+{
+	color: white;
+}
+.box
+{
+width: 450px;
+margin: 100px 0 0 400px;
+padding: 40px;
+background-color: #ffff80;
+border-style: none;
+border-width: 1px;
+border-radius: 15px;
+}
+
+input[name=username],input[name=email]
+{
+width: 230px;
+border-radius: 5px;
+padding: 5px;
+}
+
+#submit
+{
+background-color: orange;
+color: white;
+width: 100px;
+margin: 12px 0 0 50px;
+padding: 12px;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+}
+
+#clear
+{
+background-color: orange;
+color: white;
+width: 100px;
+margin: 12px 0 0 32px;
+padding: 12px;
+border:none;
+border-radius: 20px;
+cursor: pointer;
+}
+
+#submit:hover
+{
+background: #34D55F;
+}
+
+#clear:hover
+{
+background: #34D55F;
+} 
+</style>
+
+<script type="text/javascript">
+	function msg()
+	{
+		alert("We will contact you soon");
+	}
+</script>
+</head>
+<body>
+	<header>
+		
+	</header>
+<div class="box">
+<form>
+	<table>
+    <tr><td><label for="username">Username</label></td>
+    <td>:  <input type="text" name="username" id="username" placeholder="  Enter the username" required></td></tr>
+     	<tr><td><label for="email">Email</label></td>
+		<td>:  <input type="email" name="email" id="email" placeholder="  Enter the Email" required></td></tr>
+	<tr><td><input type="submit" id="submit" onclick="msg()"></td>
+	<td><input type="reset" value="Delete" id="clear"></td></tr>
+	</table>
+</form>
+</div>
+<footer class="footer">
+	<h3 class="head1">Thank you!</h3>
+	<address>
+		Praveen kumar,<br>
+		61, Ramasamy street-2,<br>
+		Neelikonamplayam,<br>
+		Coimbatore
+	</address>
+</footer>
+</body>
+</html>
